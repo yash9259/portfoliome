@@ -73,12 +73,13 @@ h1{
 <h1>🚀 CodingHunters – Project Portfolio</h1>
 
 <div class="filters">
-<button class="active" onclick="filterProjects('all')">All</button>
-<button onclick="filterProjects('react')">React</button>
-<button onclick="filterProjects('php')">PHP</button>
-<button onclick="filterProjects('mongo')">MongoDB</button>
-<button onclick="filterProjects('supabase')">Supabase</button>
-<button onclick="filterProjects('static')">Static</button>
+<button class="active" onclick="filterProjects('all', event)">All</button>
+<button onclick="filterProjects('react', event)">React</button>
+<button onclick="filterProjects('php', event)">PHP</button>
+<button onclick="filterProjects('mongo', event)">MongoDB</button>
+<button onclick="filterProjects('supabase', event)">Supabase</button>
+<button onclick="filterProjects('static', event)">Static</button>
+<button onclick="filterProjects('shopify', event)">Shopify</button>
 </div>
 
 <!-- Projects -->
@@ -137,7 +138,7 @@ h1{
 <p class="tech">React.js, Supabase</p>
 </div>
 
-<div class="project mongo react">
+<div class="project react mongo">
 <b>Uber-style Cab Booking Web App</b><br>
 <a href="https://raghuvnashi-cab5.vercel.app/" target="_blank">Visit Website</a>
 <p class="tech">React.js, MongoDB API Backend</p>
@@ -149,6 +150,20 @@ h1{
 <p class="tech">HTML, CSS, Bootstrap</p>
 </div>
 
+<!-- Shopify Projects -->
+
+<div class="project shopify">
+<b>Handicrafts of Kutch – E-commerce Store</b><br>
+<a href="https://handicraftsofkutch.com/" target="_blank">Visit Website</a>
+<p class="tech">Shopify, Custom Theme, Product Management, SEO</p>
+</div>
+
+<div class="project shopify">
+<b>Khushbu Jewellers – Online Jewellery Store</b><br>
+<a href="https://khushbujewellers.com/" target="_blank">Visit Website</a>
+<p class="tech">Shopify, Custom UI, Payment Gateway, SEO</p>
+</div>
+
 <div class="footer">
 © 2026 CodingHunters | Software Solutions
 </div>
@@ -156,7 +171,7 @@ h1{
 </div>
 
 <script>
-function filterProjects(type){
+function filterProjects(type, event){
     let projects = document.querySelectorAll('.project');
     let buttons = document.querySelectorAll('.filters button');
 
@@ -167,11 +182,9 @@ function filterProjects(type){
         if(type === 'all'){
             project.style.display = "block";
         } else {
-            if(project.classList.contains(type)){
-                project.style.display = "block";
-            } else {
-                project.style.display = "none";
-            }
+            project.style.display = project.classList.contains(type)
+                ? "block"
+                : "none";
         }
     });
 }
