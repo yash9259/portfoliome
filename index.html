@@ -21,8 +21,14 @@ h1{
     text-align:center;
     color:#38bdf8;
 }
+.subtitle{
+    text-align:center;
+    color:#94a3b8;
+    max-width:800px;
+    margin:15px auto 30px;
+}
 
-/* Filter Buttons */
+/* Filters */
 .filters{
     text-align:center;
     margin-bottom:25px;
@@ -46,12 +52,15 @@ h1{
 .project{
     background:#1e293b;
     padding:20px;
-    margin-bottom:15px;
+    margin-bottom:20px;
     border-radius:10px;
 }
 .project a{
     color:#38bdf8;
     text-decoration:none;
+}
+.project p{
+    margin:6px 0;
 }
 .tech{
     color:#94a3b8;
@@ -67,10 +76,12 @@ h1{
 </head>
 
 <body>
-
 <div class="container">
 
-<h1>🚀 CodingHunters – Project Portfolio</h1>
+<h1>🚀 CodingHunters – Case Study Portfolio</h1>
+<p class="subtitle">
+I build performance-driven websites that solve real business problems — focused on speed, conversions, SEO, and scalability.
+</p>
 
 <div class="filters">
 <button class="active" onclick="filterProjects('all', event)">All</button>
@@ -82,106 +93,96 @@ h1{
 <button onclick="filterProjects('shopify', event)">Shopify</button>
 </div>
 
-<!-- Projects -->
+<!-- PROJECTS -->
 
 <div class="project react mongo">
 <b>Local Vendor & Service Platform</b><br>
 <a href="https://www.jalaramhomeservices.in/" target="_blank">Visit Website</a>
-<p class="tech">React.js, Firebase, MongoDB, Map API</p>
+<p><strong>Problem:</strong> Customers couldn’t find reliable local service providers quickly.</p>
+<p><strong>Solution:</strong> Built a location-based service discovery and booking platform.</p>
+<p><strong>Impact:</strong> Faster service matching, reduced manual coordination, scalable onboarding.</p>
+<p class="tech">React.js, Firebase, MongoDB, Map API | <strong>Role:</strong> Full-stack Development</p>
 </div>
 
 <div class="project php">
 <b>Food Delivery E-commerce Platform</b><br>
 <a href="https://wedelivermussoorie.com/" target="_blank">Visit Website</a>
-<p class="tech">PHP, MySQL, Payment Gateway, TCPDF</p>
+<p><strong>Problem:</strong> Offline food orders caused delays and missed sales.</p>
+<p><strong>Solution:</strong> Developed an online ordering system with payment & invoice automation.</p>
+<p><strong>Impact:</strong> Smoother ordering, reduced manual billing, better customer experience.</p>
+<p class="tech">PHP, MySQL, Payment Gateway, TCPDF | <strong>Role:</strong> Backend & Payments</p>
 </div>
 
 <div class="project php">
 <b>Event & Musical Housie Management System</b><br>
 <a href="https://event.vijayca.com/" target="_blank">Visit Website</a>
-<p class="tech">PHP, MySQL, JavaScript</p>
+<p><strong>Problem:</strong> Manual event handling caused errors during live shows.</p>
+<p><strong>Solution:</strong> Built a digital housie & event management system.</p>
+<p><strong>Impact:</strong> Faster execution, error reduction, smooth live events.</p>
+<p class="tech">PHP, MySQL, JavaScript | <strong>Role:</strong> System Design & Logic</p>
 </div>
 
 <div class="project php">
 <b>Tours & Travels Booking Website</b><br>
 <a href="https://rannutsavkutch.in/" target="_blank">Visit Website</a>
-<p class="tech">PHP, MySQL, Email & Payment</p>
+<p><strong>Problem:</strong> Travel bookings handled offline with low conversions.</p>
+<p><strong>Solution:</strong> Created an online booking & inquiry automation system.</p>
+<p><strong>Impact:</strong> Increased inquiries, improved trust, better traffic handling.</p>
+<p class="tech">PHP, MySQL, Email & Payments | <strong>Role:</strong> Full-stack</p>
 </div>
 
 <div class="project static">
 <b>Home Furniture Business Website</b><br>
 <a href="https://www.rachanainternational.com/" target="_blank">Visit Website</a>
-<p class="tech">HTML, CSS, Bootstrap</p>
+<p><strong>Problem:</strong> No digital presence for showcasing products.</p>
+<p><strong>Solution:</strong> Designed a responsive brand-focused website.</p>
+<p><strong>Impact:</strong> Better brand credibility and customer reach.</p>
+<p class="tech">HTML, CSS, Bootstrap | <strong>Role:</strong> UI & Layout</p>
 </div>
 
 <div class="project react supabase">
 <b>Local Tours Website</b><br>
 <a href="https://thacker-travels.vercel.app/" target="_blank">Visit Website</a>
-<p class="tech">React.js, Supabase</p>
+<p><strong>Problem:</strong> Tour bookings were inquiry-based only.</p>
+<p><strong>Solution:</strong> Built a fast React site with Supabase backend.</p>
+<p><strong>Impact:</strong> Improved engagement and faster inquiries.</p>
+<p class="tech">React.js, Supabase | <strong>Role:</strong> Frontend & Backend</p>
 </div>
 
 <div class="project static">
 <b>Security Services Company Website</b><br>
 <a href="https://bhavanisecurity.in/" target="_blank">Visit Website</a>
-<p class="tech">HTML, CSS, Bootstrap</p>
-</div>
-
-<div class="project static">
-<b>Game Zone Informational Website</b><br>
-<a href="http://vr360gamez.in/" target="_blank">Visit Website</a>
-<p class="tech">HTML, CSS, Bootstrap</p>
-</div>
-
-<div class="project react">
-<b>E-commerce Website (In Development)</b><br>
-<a href="https://orthocaredemo.vercel.app/" target="_blank">Visit Website</a>
-<p class="tech">React.js, Supabase</p>
+<p><strong>Problem:</strong> Low trust due to outdated online presence.</p>
+<p><strong>Solution:</strong> Created a professional corporate website.</p>
+<p><strong>Impact:</strong> Increased credibility and lead inquiries.</p>
+<p class="tech">HTML, CSS, Bootstrap | <strong>Role:</strong> UI Development</p>
 </div>
 
 <div class="project react mongo">
 <b>Uber-style Cab Booking Web App</b><br>
 <a href="https://raghuvnashi-cab5.vercel.app/" target="_blank">Visit Website</a>
-<p class="tech">React.js, MongoDB API Backend</p>
+<p><strong>Problem:</strong> Manual cab bookings caused delays.</p>
+<p><strong>Solution:</strong> Developed a booking flow with backend APIs.</p>
+<p><strong>Impact:</strong> Faster bookings and scalable architecture.</p>
+<p class="tech">React.js, MongoDB API | <strong>Role:</strong> Frontend & APIs</p>
 </div>
-
-<div class="project static">
-<b>Logistics Company Website</b><br>
-<a href="http://www.elephantlogistic.com/" target="_blank">Visit Website</a>
-<p class="tech">HTML, CSS, Bootstrap</p>
-</div>
-
-<!-- NEW PROJECTS ADDED -->
-
-<div class="project static">
-<b>Prachin Ayurved Kutir – Ayurvedic Wellness Website</b><br>
-<a href="https://prachinayurvedkutir.com/" target="_blank">Visit Website</a>
-<p class="tech">HTML, CSS, Bootstrap, Responsive Design</p>
-</div>
-
-<div class="project react">
-<b>Shree KGK Vocational Education Institute – College Website</b><br>
-<a href="https://skgk-clg.vercel.app/" target="_blank">Visit Website</a>
-<p class="tech">React.js, Responsive UI, Educational Website</p>
-</div>
-
-<div class="project static">
-<b>Atmiya Surgical – Medical & Surgical Products Website</b><br>
-<a href="https://www.atmiyasurgical.com/" target="_blank">Visit Website</a>
-<p class="tech">HTML, CSS, Bootstrap, Business Website</p>
-</div>
-
-<!-- Shopify Projects -->
 
 <div class="project shopify">
-<b>Handicrafts of Kutch – E-commerce Store</b><br>
+<b>Handicrafts of Kutch – Shopify Store</b><br>
 <a href="https://handicraftsofkutch.com/" target="_blank">Visit Website</a>
-<p class="tech">Shopify, Custom Theme, Product Management, SEO</p>
+<p><strong>Problem:</strong> Artisans lacked online sales visibility.</p>
+<p><strong>Solution:</strong> Built a SEO-optimized Shopify store.</p>
+<p><strong>Impact:</strong> Better product visibility and mobile conversions.</p>
+<p class="tech">Shopify, Custom Theme, SEO | <strong>Role:</strong> Theme & UX</p>
 </div>
 
 <div class="project shopify">
-<b>Khushbu Jewellers – Online Jewellery Store</b><br>
+<b>Khushbu Jewellers – Online Store</b><br>
 <a href="https://khushbujewellers.com/" target="_blank">Visit Website</a>
-<p class="tech">Shopify, Custom UI, Payment Gateway, SEO</p>
+<p><strong>Problem:</strong> Jewellery business needed online expansion.</p>
+<p><strong>Solution:</strong> Designed a premium Shopify storefront.</p>
+<p><strong>Impact:</strong> Increased online trust and inquiries.</p>
+<p class="tech">Shopify, UI Customization | <strong>Role:</strong> Store Setup</p>
 </div>
 
 <div class="footer">
@@ -194,18 +195,10 @@ h1{
 function filterProjects(type, event){
     let projects = document.querySelectorAll('.project');
     let buttons = document.querySelectorAll('.filters button');
-
     buttons.forEach(btn => btn.classList.remove('active'));
     event.target.classList.add('active');
-
     projects.forEach(project => {
-        if(type === 'all'){
-            project.style.display = "block";
-        } else {
-            project.style.display = project.classList.contains(type)
-                ? "block"
-                : "none";
-        }
+        project.style.display = (type === 'all' || project.classList.contains(type)) ? 'block' : 'none';
     });
 }
 </script>
