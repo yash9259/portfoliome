@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodingHunters Portfolio</title>
+<title>Yash Thakkar | Full Stack Developer</title>
 
 <style>
 body{
@@ -54,6 +54,10 @@ h1{
     padding:20px;
     margin-bottom:20px;
     border-radius:10px;
+    transition:0.3s;
+}
+.project:hover{
+    transform:translateY(-5px);
 }
 .project a{
     color:#38bdf8;
@@ -78,115 +82,61 @@ h1{
 <body>
 <div class="container">
 
-<h1>🚀 CodingHunters – Case Study Portfolio</h1>
+<h1>Yash Thakkar – Full Stack Developer Portfolio</h1>
 <p class="subtitle">
-I build performance-driven websites that solve real business problems — focused on speed, conversions, SEO, and scalability.
+I design and build scalable, performance-driven web applications that solve real business problems. 
+Focused on clean UI, strong backend architecture, and conversion-driven systems.
 </p>
 
 <div class="filters">
 <button class="active" onclick="filterProjects('all', event)">All</button>
 <button onclick="filterProjects('react', event)">React</button>
 <button onclick="filterProjects('php', event)">PHP</button>
-<button onclick="filterProjects('mongo', event)">MongoDB</button>
-<button onclick="filterProjects('supabase', event)">Supabase</button>
-<button onclick="filterProjects('static', event)">Static</button>
 <button onclick="filterProjects('shopify', event)">Shopify</button>
+<button onclick="filterProjects('static', event)">Static</button>
 </div>
 
 <!-- PROJECTS -->
 
-<div class="project react mongo">
-<b>Local Vendor & Service Platform</b><br>
-<a href="https://www.jalaramhomeservices.in/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Customers couldn’t find reliable local service providers quickly.</p>
-<p><strong>Solution:</strong> Built a location-based service discovery and booking platform.</p>
-<p><strong>Impact:</strong> Faster service matching, reduced manual coordination, scalable onboarding.</p>
-<p class="tech">React.js, Firebase, MongoDB, Map API | <strong>Role:</strong> Full-stack Development</p>
-</div>
-
-<div class="project php">
-<b>Food Delivery E-commerce Platform</b><br>
-<a href="https://wedelivermussoorie.com/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Offline food orders caused delays and missed sales.</p>
-<p><strong>Solution:</strong> Developed an online ordering system with payment & invoice automation.</p>
-<p><strong>Impact:</strong> Smoother ordering, reduced manual billing, better customer experience.</p>
-<p class="tech">PHP, MySQL, Payment Gateway, TCPDF | <strong>Role:</strong> Backend & Payments</p>
-</div>
-
-<div class="project php">
-<b>Event & Musical Housie Management System</b><br>
-<a href="https://event.vijayca.com/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Manual event handling caused errors during live shows.</p>
-<p><strong>Solution:</strong> Built a digital housie & event management system.</p>
-<p><strong>Impact:</strong> Faster execution, error reduction, smooth live events.</p>
-<p class="tech">PHP, MySQL, JavaScript | <strong>Role:</strong> System Design & Logic</p>
-</div>
-
-<div class="project php">
-<b>Tours & Travels Booking Website</b><br>
-<a href="https://rannutsavkutch.in/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Travel bookings handled offline with low conversions.</p>
-<p><strong>Solution:</strong> Created an online booking & inquiry automation system.</p>
-<p><strong>Impact:</strong> Increased inquiries, improved trust, better traffic handling.</p>
-<p class="tech">PHP, MySQL, Email & Payments | <strong>Role:</strong> Full-stack</p>
-</div>
-
-<div class="project static">
-<b>Home Furniture Business Website</b><br>
-<a href="https://www.rachanainternational.com/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> No digital presence for showcasing products.</p>
-<p><strong>Solution:</strong> Designed a responsive brand-focused website.</p>
-<p><strong>Impact:</strong> Better brand credibility and customer reach.</p>
-<p class="tech">HTML, CSS, Bootstrap | <strong>Role:</strong> UI & Layout</p>
-</div>
-
-<div class="project react supabase">
-<b>Local Tours Website</b><br>
-<a href="https://thacker-travels.vercel.app/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Tour bookings were inquiry-based only.</p>
-<p><strong>Solution:</strong> Built a fast React site with Supabase backend.</p>
-<p><strong>Impact:</strong> Improved engagement and faster inquiries.</p>
-<p class="tech">React.js, Supabase | <strong>Role:</strong> Frontend & Backend</p>
-</div>
-
-<div class="project static">
-<b>Security Services Company Website</b><br>
-<a href="https://bhavanisecurity.in/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Low trust due to outdated online presence.</p>
-<p><strong>Solution:</strong> Created a professional corporate website.</p>
-<p><strong>Impact:</strong> Increased credibility and lead inquiries.</p>
-<p class="tech">HTML, CSS, Bootstrap | <strong>Role:</strong> UI Development</p>
-</div>
-
-<div class="project react mongo">
+<div class="project react">
 <b>Uber-style Cab Booking Web App</b><br>
-<a href="https://raghuvnashi-cab5.vercel.app/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Manual cab bookings caused delays.</p>
-<p><strong>Solution:</strong> Developed a booking flow with backend APIs.</p>
-<p><strong>Impact:</strong> Faster bookings and scalable architecture.</p>
-<p class="tech">React.js, MongoDB API | <strong>Role:</strong> Frontend & APIs</p>
+<p><strong>Tech:</strong> React.js, MongoDB API</p>
+<p><strong>Role:</strong> Frontend & API Integration</p>
+<p>Built a scalable booking platform with real-time availability and clean user experience.</p>
+</div>
+
+<div class="project php">
+<b>Food Delivery E-commerce System</b><br>
+<p><strong>Tech:</strong> PHP, MySQL, Payment Gateway, TCPDF</p>
+<p><strong>Role:</strong> Backend & Payment Integration</p>
+<p>Developed automated ordering, billing, and invoice system to streamline restaurant operations.</p>
+</div>
+
+<div class="project php">
+<b>Event & Housie Management System</b><br>
+<p><strong>Tech:</strong> PHP, MySQL, JavaScript</p>
+<p><strong>Role:</strong> System Logic & Architecture</p>
+<p>Digitized event execution to eliminate manual errors and improve real-time coordination.</p>
 </div>
 
 <div class="project shopify">
-<b>Handicrafts of Kutch – Shopify Store</b><br>
-<a href="https://handicraftsofkutch.com/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Artisans lacked online sales visibility.</p>
-<p><strong>Solution:</strong> Built a SEO-optimized Shopify store.</p>
-<p><strong>Impact:</strong> Better product visibility and mobile conversions.</p>
-<p class="tech">Shopify, Custom Theme, SEO | <strong>Role:</strong> Theme & UX</p>
+<b>E-commerce Shopify Stores</b><br>
+<p><strong>Tech:</strong> Shopify, Custom Theme, SEO Optimization</p>
+<p><strong>Role:</strong> Store Setup & UX Customization</p>
+<p>Designed premium storefronts optimized for mobile conversions and search visibility.</p>
 </div>
 
-<div class="project shopify">
-<b>Khushbu Jewellers – Online Store</b><br>
-<a href="https://khushbujewellers.com/" target="_blank">Visit Website</a>
-<p><strong>Problem:</strong> Jewellery business needed online expansion.</p>
-<p><strong>Solution:</strong> Designed a premium Shopify storefront.</p>
-<p><strong>Impact:</strong> Increased online trust and inquiries.</p>
-<p class="tech">Shopify, UI Customization | <strong>Role:</strong> Store Setup</p>
+<div class="project static">
+<b>Corporate & Business Websites</b><br>
+<p><strong>Tech:</strong> HTML, CSS, Bootstrap</p>
+<p><strong>Role:</strong> UI & Responsive Layout</p>
+<p>Created brand-focused responsive websites for local businesses and service companies.</p>
 </div>
 
 <div class="footer">
-© 2026 CodingHunters | Software Solutions
+© 2026 Yash Thakkar | Full Stack Developer  
+<br>
+Bhuj, Gujarat | yashthakkar0603@gmail.com | 9106433706
 </div>
 
 </div>
